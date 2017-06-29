@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-28T22:45:34+08:00</updated>
+  <updated>2017-06-29T08:41:48+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -28,6 +28,14 @@
 </ol>
 
 
+<h1>合并远程仓库</h1>
+
+<p>我们再刚开始在github是建立了一个远程仓库的，第一次使用的时候是还没有将远程仓库和本地仓库合并的，这是两个不同的仓库，所以这时候需要先使用</p>
+
+<pre><code class="shell">cd _deploy
+git pull origin master --allow-unrelated-histories
+</code></pre>
+
 <h1>更换octopress 主题，</h1>
 
 <ol>
@@ -39,15 +47,15 @@
 
 <p>需要mathjx支持，不知道能不能有用。</p>
 
-<p>$$
-f(x) = \sin(x)\int_0<sup>1</sup>\sum \cos(x)dx
-$$</p>
+<p>$$f(x) = \sin(x)\int_{0}^{1}\sum \cos(x)dx$$</p>
 
-<p>显然是没有用的。$$\sin(x)$$</p>
+<p>显然是没有用的。$\sin(x)$</p>
 
-<p>$$f(x) = \int<sup>10</sup>_0\sin(x)dx$$</p>
+<p>$$f(x) = \int^{10}_0\sin(x)dx$$</p>
 
-<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。另外，如果翻墙，公式加载也非常慢，直接访问网站会快很多。</p>
+<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。另外，如果翻墙，公式加载也非常慢，直接访问网站会快很多。其实不更改markdown 也没关系的。但是注意改又花括号的地方时不能省略的。</p>
+
+<p>$$f(x) =x\cdot y$$</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
