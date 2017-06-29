@@ -3,7 +3,7 @@ layout: post
 title: "Using Octopress"
 date: 2017-06-28 22:41:59 +0800
 comments: true
-categories: 
+categories: octopress
 ---
 
 这篇文章参考了生命之氢
@@ -98,3 +98,10 @@ class g(nn.Module):
 ![](images/image.img)
 ```
 
+
+
+# 提升速度
+
+使用谷歌的源加载速度特别慢。
+
+具体的就是把source/*include/head.html和source/*include/custom/head.html中的fonts.google.com和ajax.google.com都替换成userso.com然后就Okay，速度哗哗的
