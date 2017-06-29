@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[AI Dreamer]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-29T09:16:24+08:00</updated>
+  <updated>2017-06-29T09:48:38+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[YANG Chao]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Using Octopress]]></title>
-    <link href="http://ycangus2415.github.io/blog/2017/06/28/using-octopress/"/>
+    <link href="http://ycangus2415.github.io/blog/20170628/using-octopress.html/"/>
     <updated>2017-06-28T22:41:59+08:00</updated>
-    <id>http://ycangus2415.github.io/blog/2017/06/28/using-octopress</id>
+    <id>http://ycangus2415.github.io/blog/20170628/using-octopress</id>
     <content type="html"><![CDATA[<p>这篇文章参考了生命之氢</p>
 
 <h1>新建一个github.io</h1>
@@ -128,7 +128,11 @@ git pull origin master --allow-unrelated-histories
 </span></code></pre></td></tr></table></div></figure>
 
 
+<h1>提升速度</h1>
 
+<p>使用谷歌的源加载速度特别慢。</p>
+
+<p>具体的就是把source/<em>include/head.html和source/</em>include/custom/head.html中的fonts.google.com和ajax.google.com都替换成userso.com然后就Okay，速度哗哗的</p>
 ]]></content>
   </entry>
   
