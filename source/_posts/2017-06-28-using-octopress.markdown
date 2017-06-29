@@ -105,3 +105,22 @@ class g(nn.Module):
 使用谷歌的源加载速度特别慢。
 
 具体的就是把source/*include/head.html和source/*include/custom/head.html中的fonts.google.com和ajax.google.com都替换成userso.com然后就Okay，速度哗哗的
+
+
+
+# 添加七牛图床
+
+这个跟octopress无关。
+
+下载qshell，将文件放在/usr/local/bin/下，然后在终端操作
+
+~~~shell
+qshell account ak sk#ak和sk分别是账户和密码这样就能生成账户文件
+~~~
+
+这时候可以在任何位置使用qshell命令
+
+~~~shell
+qshell qupload hello.txt#hello.txt是配置文件，这个配置文件是包含了上传信息的。参见qupload文档说明。
+~~~
+

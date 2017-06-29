@@ -41,7 +41,7 @@ $$
 
 如图，是$C\in [-4:6:2]$,箭头表示此处的方向场，也就是$C$,$C$代表的是斜率。所以，每一条直线又叫做等斜线。
 
-![weifenfangcheng-1](/images/weifenfangcheng-1.png =300x300)
+![weifenfangcheng-1](http://osawqwqov.bkt.clouddn.com/%3CKey%20Prefix%3Eweifenfangcheng-1.png-yi)
 
 
 
