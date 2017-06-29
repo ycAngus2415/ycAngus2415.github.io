@@ -1,0 +1,143 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>微分几何初步理解  | AI Dreamer</title>
+
+	<meta name="author" content="YANG Chao"> 
+	
+	<meta name="description" content="解微分方程，很多时候都不好求解，但是从几何的角度就很容易解释，虽然可能不能得到精确的表达式，但是从几何的角度很容易得到解方程的性质。 比如说：$y^{&lsquo;}=1+x-y$这个方程看起来简单但是不好求解，但是我们可以从几何的角度解释。 $f(x, y) = 1+x-y$表示一个方向场， &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="AI Dreamer" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><h1>AI Dreamer</h1>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/archives">Archive</a></li>
+	<li><a href="/aboutme">AboutMe</a></li>
+</ul>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">微分几何初步理解</h2>
+	<div class="entry-content"><p>解微分方程，很多时候都不好求解，但是从几何的角度就很容易解释，虽然可能不能得到精确的表达式，但是从几何的角度很容易得到解方程的性质。</p>
+
+<p>比如说：$y^{&lsquo;}=1+x-y$这个方程看起来简单但是不好求解，但是我们可以从几何的角度解释。</p>
+
+<p>$f(x, y) = 1+x-y$表示一个方向场，在每一个点都有一个方向，或者说斜率，而$y^{&lsquo;}$表示的是解函数（我们假设解为$y_1(x)$)的斜率，所以解函数就是，斜率和方向场相同的曲线，或者叫做，积分曲线。</p>
+
+<p>要证明微分方程的解就是方向场的积分曲线也可以简单说明下。</p>
+
+<ul>
+<li>首先微分方程的解肯定是满足微分方程的。</li>
+<li>也就是说，满足微分方程的函数就是微分方程的解。</li>
+<li>另一方面，方向场的积分曲线斜率都是和解函数的斜率一样的。</li>
+</ul>
+
+
+<p>下面我们就来画画这个方向场和积分。</p>
+
+<ul>
+<li>计算机在画方向场的时候，
+
+<ul>
+<li>取一个点$(x, y)$,</li>
+<li>计算$f(x, y)$,</li>
+<li>画图</li>
+</ul>
+</li>
+<li>人在画方向场的时候，是和计算机不一样的，
+
+<ul>
+<li>去一个方向，$f(x, y) = C$,然后画出$x, y$曲线，并标上方向，这样的线，叫做等斜线。</li>
+<li>然后更换C，画出其他所有的等值线。这样一来，速度就块多了。</li>
+</ul>
+</li>
+</ul>
+
+
+<p>所以，我们继续看这个例子。</p>
+
+<p>$$
+f(x, y)=1+x-y = C , y = x+1-c，
+$$</p>
+
+<p>如图，是$C\in [-4:6:2]$,箭头表示此处的方向场，也就是$C$,$C$代表的是斜率。所以，每一条直线又叫做等斜线。</p>
+
+<p><img src="/images/weifenfangcheng-1.png" height="300" width="300" alt="weifenfangcheng-1" /></p>
+
+<p>我们把线画得更多一点)</p>
+
+<p>积分曲线就是沿着一个方向的曲线。</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2017-06-29T10:22:43+08:00" pubdate data-updated="true">Jun 29th, 2017</time></div>
+	
+
+<div class="tags">
+
+	<a class='category' href='/blog/categories/wei-fen-ji-he/'>微分几何</a>
+
+</div>
+
+
+</div>
+</article>
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2017
+ YANG Chao 
+<br>
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</footer>
+	
+
+</body>
+</html>
