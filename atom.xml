@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2017-06-29T08:41:48+08:00</updated>
+  <updated>2017-06-29T09:16:24+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -30,7 +30,9 @@
 
 <h1>合并远程仓库</h1>
 
-<p>我们再刚开始在github是建立了一个远程仓库的，第一次使用的时候是还没有将远程仓库和本地仓库合并的，这是两个不同的仓库，所以这时候需要先使用</p>
+<p>在octopress中，是有两个仓库的，一个是source，用来存放后台代码的,一个是master，也就是主分支，是前端显示的。</p>
+
+<p>我们刚开始在github是建立了一个远程仓库的，第一次使用的时候是还没有将远程仓库和本地仓库合并的，这是两个不同的仓库，会提示unrelated histories，所以这时候需要先使用</p>
 
 <pre><code class="shell">cd _deploy
 git pull origin master --allow-unrelated-histories
