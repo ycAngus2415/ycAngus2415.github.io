@@ -95,7 +95,7 @@ class g(nn.Module):
 插入的图片放在/octopress/source/images/下，在引用的时候
 
 ```
-![](images/image.img)
+![](/images/image.img)
 ```
 
 
