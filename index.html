@@ -89,7 +89,7 @@ $$</p>
 
 <p>如图，是$C\in [-4:6:2]$,箭头表示此处的方向场，也就是$C$,$C$代表的是斜率。所以，每一条直线又叫做等斜线。</p>
 
-<p><img src="/images/weifenfangcheng-1.png" height="300" width="300" alt="weifenfangcheng-1" /></p>
+<p><img src="http://osawqwqov.bkt.clouddn.com/%3CKey%20Prefix%3Eweifenfangcheng-1.png-yi" alt="weifenfangcheng-1" /></p>
 
 <p>我们把线画得更多一点)</p>
 
@@ -242,7 +242,7 @@ git pull origin master --allow-unrelated-histories
 <p>插入的图片放在/octopress/source/images/下，在引用的时候</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="err">!</span><span class="p">[](</span><span class="n">images</span><span class="o">/</span><span class="n">image</span><span class="o">.</span><span class="n">img</span><span class="p">)</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="err">!</span><span class="p">[](</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">image</span><span class="o">.</span><span class="n">img</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -251,6 +251,20 @@ git pull origin master --allow-unrelated-histories
 <p>使用谷歌的源加载速度特别慢。</p>
 
 <p>具体的就是把source/<em>include/head.html和source/</em>include/custom/head.html中的fonts.google.com和ajax.google.com都替换成userso.com然后就Okay，速度哗哗的</p>
+
+<h1>添加七牛图床</h1>
+
+<p>这个跟octopress无关。</p>
+
+<p>下载qshell，将文件放在/usr/local/bin/下，然后在终端操作</p>
+
+<pre><code class="shell">qshell account ak sk#ak和sk分别是账户和密码这样就能生成账户文件
+</code></pre>
+
+<p>这时候可以在任何位置使用qshell命令</p>
+
+<pre><code class="shell">qshell qupload hello.txt#hello.txt是配置文件，这个配置文件是包含了上传信息的。参见qupload文档说明。
+</code></pre>
 
 		
 		
