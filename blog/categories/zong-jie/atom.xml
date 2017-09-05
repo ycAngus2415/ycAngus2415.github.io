@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 总结 | AI Dreamer]]></title>
+  <link href="http://ycangus2415.github.io/blog/categories/zong-jie/atom.xml" rel="self"/>
+  <link href="http://ycangus2415.github.io/"/>
+  <updated>2017-09-05T09:05:04+08:00</updated>
+  <id>http://ycangus2415.github.io/</id>
+  <author>
+    <name><![CDATA[YANG Chao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[八月总结]]></title>
+    <link href="http://ycangus2415.github.io/blog/20170904/ba-yue-zong-jie.html/"/>
+    <updated>2017-09-04T21:28:37+08:00</updated>
+    <id>http://ycangus2415.github.io/blog/20170904/ba-yue-zong-jie</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>

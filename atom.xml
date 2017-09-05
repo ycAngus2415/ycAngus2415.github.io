@@ -1,94 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Dreamer Dream  | AI Dreamer</title>
-
-	<meta name="author" content="YANG Chao"> 
-	
-	<meta name="description" content=" Sep 4th, 2017 总结 "> <meta name="keywords" content="">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link href="/atom.xml" rel="alternate" title="AI Dreamer" type="application/atom+xml">
-	<link rel="canonical" href="">
-	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	
-</head>
-
-
-
-<body>
-	<header id="header" class="inner"><h1>AI Dreamer</h1>
-<nav id="main-nav"><ul>
-	<li><a href="/">Blog</a></li>
-	<li><a href="/archives">Archive</a></li>
-	<li><a href="/aboutme">AboutMe</a></li>
-</ul>
-</nav>
-
-
-</header>
-
-	<div id="content" class="inner">
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/20170904/ba-yue-zong-jie.html/">
-		
-			八月总结</a>
-	</h2>
-	<div class="entry-content">
-		
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
+  <title><![CDATA[AI Dreamer]]></title>
+  <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
+  <link href="http://ycangus2415.github.io/"/>
+  <updated>2017-09-05T09:05:04+08:00</updated>
+  <id>http://ycangus2415.github.io/</id>
+  <author>
+    <name><![CDATA[YANG Chao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-
-<time datetime="2017-09-04T21:28:37+08:00" pubdate data-updated="true">Sep 4th, 2017</time></div>
-	
-
-<div class="tags">
-
-	<a class='category' href='/blog/categories/zong-jie/'>总结</a>
-
-</div>
-
-
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/20170629/wei-fen-ji-he.html/">
-		
-			微分几何初步理解</a>
-	</h2>
-	<div class="entry-content">
-		<p>解微分方程，很多时候都不好求解，但是从几何的角度就很容易解释，虽然可能不能得到精确的表达式，但是从几何的角度很容易得到解方程的性质。</p>
+  <entry>
+    <title type="html"><![CDATA[八月总结]]></title>
+    <link href="http://ycangus2415.github.io/blog/20170904/ba-yue-zong-jie.html/"/>
+    <updated>2017-09-04T21:28:37+08:00</updated>
+    <id>http://ycangus2415.github.io/blog/20170904/ba-yue-zong-jie</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[微分几何初步理解]]></title>
+    <link href="http://ycangus2415.github.io/blog/20170629/wei-fen-ji-he.html/"/>
+    <updated>2017-06-29T10:22:43+08:00</updated>
+    <id>http://ycangus2415.github.io/blog/20170629/wei-fen-ji-he</id>
+    <content type="html"><![CDATA[<p>解微分方程，很多时候都不好求解，但是从几何的角度就很容易解释，虽然可能不能得到精确的表达式，但是从几何的角度很容易得到解方程的性质。</p>
 
 <p>比如说：$y^{&lsquo;}=1+x-y$这个方程看起来简单但是不好求解，但是我们可以从几何的角度解释。</p>
 
@@ -137,49 +76,15 @@ $$</p>
 <p>我们把线画得更多一点)</p>
 
 <p>积分曲线就是沿着一个方向的曲线。</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-
-<time datetime="2017-06-29T10:22:43+08:00" pubdate data-updated="true">Jun 29th, 2017</time></div>
-	
-
-<div class="tags">
-
-	<a class='category' href='/blog/categories/wei-fen-ji-he/'>微分几何</a>
-
-</div>
-
-
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/20170628/using-octopress.html/">
-		
-			Using Octopress</a>
-	</h2>
-	<div class="entry-content">
-		<p>这篇文章参考了生命之氢</p>
+  <entry>
+    <title type="html"><![CDATA[Using Octopress]]></title>
+    <link href="http://ycangus2415.github.io/blog/20170628/using-octopress.html/"/>
+    <updated>2017-06-28T22:41:59+08:00</updated>
+    <id>http://ycangus2415.github.io/blog/20170628/using-octopress</id>
+    <content type="html"><![CDATA[<p>这篇文章参考了生命之氢</p>
 
 <h1>新建一个github.io</h1>
 
@@ -327,66 +232,9 @@ git push origin source
 <pre><code class="shell">bundle exec rake new_post[new_post]#新博客
 bundle exec rake new_page[new_page]#新页面
 #在source/_includes/custom/navigation.html 中添加
-&lt;li&gt;&lt;a href="/your-title/new_post"&gt;new_post&lt;/a&gt;&lt;/li&gt;#以添加页面到导航栏
+&lt;li&gt;&lt;a href="http://ycangus2415.github.io/your-title/new_post"&gt;new_post&lt;/a&gt;&lt;/li&gt;#以添加页面到导航栏
 </code></pre>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-
-<time datetime="2017-06-28T22:41:59+08:00" pubdate data-updated="true">Jun 28th, 2017</time></div>
-	
-
-<div class="tags">
-
-	<a class='category' href='/blog/categories/octopress/'>octopress</a>
-
-</div>
-
-
-</div>
-</article>
-
-
-</div>
-	<footer id="footer" class="inner">Copyright &copy; 2017
- YANG Chao 
-<br>
-
-<!-- mathjax config similar to math.stackexchange -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  jax: ["input/TeX", "output/HTML-CSS"],
-  tex2jax: {
-    inlineMath: [ ['$', '$'] ],
-    displayMath: [ ['$$', '$$']],
-    processEscapes: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-  },
-  messageStyle: "none",
-  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-});
-</script>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-</footer>
-	
-
-</body>
-</html>
+</feed>

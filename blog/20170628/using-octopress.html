@@ -3,11 +3,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Dreamer Dream  | AI Dreamer</title>
+	<title>Using Octopress  | AI Dreamer</title>
 
 	<meta name="author" content="YANG Chao"> 
 	
-	<meta name="description" content=" Sep 4th, 2017 总结 "> <meta name="keywords" content="">
+	<meta name="description" content="这篇文章参考了生命之氢 新建一个github.io 创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦
+新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端， &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -34,152 +35,9 @@
 
 </header>
 
-	<div id="content" class="inner">
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/20170904/ba-yue-zong-jie.html/">
-		
-			八月总结</a>
-	</h2>
-	<div class="entry-content">
-		
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-
-<time datetime="2017-09-04T21:28:37+08:00" pubdate data-updated="true">Sep 4th, 2017</time></div>
-	
-
-<div class="tags">
-
-	<a class='category' href='/blog/categories/zong-jie/'>总结</a>
-
-</div>
-
-
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/20170629/wei-fen-ji-he.html/">
-		
-			微分几何初步理解</a>
-	</h2>
-	<div class="entry-content">
-		<p>解微分方程，很多时候都不好求解，但是从几何的角度就很容易解释，虽然可能不能得到精确的表达式，但是从几何的角度很容易得到解方程的性质。</p>
-
-<p>比如说：$y^{&lsquo;}=1+x-y$这个方程看起来简单但是不好求解，但是我们可以从几何的角度解释。</p>
-
-<p>$f(x, y) = 1+x-y$表示一个方向场，在每一个点都有一个方向，或者说斜率，而$y^{&lsquo;}$表示的是解函数（我们假设解为$y_1(x)$)的斜率，所以解函数就是，斜率和方向场相同的曲线，或者叫做，积分曲线。</p>
-
-<p>要证明微分方程的解就是方向场的积分曲线也可以简单说明下。</p>
-
-<ul>
-<li>首先微分方程的解肯定是满足微分方程的。</li>
-<li>也就是说，满足微分方程的函数就是微分方程的解。</li>
-<li>另一方面，方向场的积分曲线斜率都是和解函数的斜率一样的。</li>
-</ul>
-
-
-<p>下面我们就来画画这个方向场和积分。</p>
-
-<ul>
-<li>计算机在画方向场的时候，
-
-<ul>
-<li>取一个点$(x, y)$,</li>
-<li>计算$f(x, y)$,</li>
-<li>画图</li>
-</ul>
-</li>
-<li>人在画方向场的时候，是和计算机不一样的，
-
-<ul>
-<li>去一个方向，$f(x, y) = C$,然后画出$x, y$曲线，并标上方向，这样的线，叫做等斜线。</li>
-<li>然后更换C，画出其他所有的等值线。这样一来，速度就块多了。</li>
-</ul>
-</li>
-</ul>
-
-
-<p>所以，我们继续看这个例子。</p>
-
-<p>$$
-f(x, y)=1+x-y = C , y = x+1-c，
-$$</p>
-
-<p>如图，是$C\in [-4:6:2]$,箭头表示此处的方向场，也就是$C$,$C$代表的是斜率。所以，每一条直线又叫做等斜线。</p>
-
-<p><img src="http://osawqwqov.bkt.clouddn.com/%3CKey%20Prefix%3Eweifenfangcheng-1.png-yi" height="500" width="500" alt="weifenfangcheng-1" /></p>
-
-<p>我们把线画得更多一点)</p>
-
-<p>积分曲线就是沿着一个方向的曲线。</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-
-<time datetime="2017-06-29T10:22:43+08:00" pubdate data-updated="true">Jun 29th, 2017</time></div>
-	
-
-<div class="tags">
-
-	<a class='category' href='/blog/categories/wei-fen-ji-he/'>微分几何</a>
-
-</div>
-
-
-</div>
-</article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/20170628/using-octopress.html/">
-		
-			Using Octopress</a>
-	</h2>
-	<div class="entry-content">
-		<p>这篇文章参考了生命之氢</p>
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Using Octopress</h2>
+	<div class="entry-content"><p>这篇文章参考了生命之氢</p>
 
 <h1>新建一个github.io</h1>
 
@@ -329,10 +187,7 @@ bundle exec rake new_page[new_page]#新页面
 #在source/_includes/custom/navigation.html 中添加
 &lt;li&gt;&lt;a href="/your-title/new_post"&gt;new_post&lt;/a&gt;&lt;/li&gt;#以添加页面到导航栏
 </code></pre>
-
-		
-		
-	</div>
+</div>
 
 
 <div class="meta">
@@ -361,8 +216,6 @@ bundle exec rake new_page[new_page]#新页面
 
 </div>
 </article>
-
-
 </div>
 	<footer id="footer" class="inner">Copyright &copy; 2017
  YANG Chao 
