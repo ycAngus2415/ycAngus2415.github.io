@@ -1,0 +1,224 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Using Octopress  | AI Dreamer</title>
+
+	<meta name="author" content="YANG Chao"> 
+	
+	<meta name="description" content="这篇文章参考了生命之氢 新建一个github.io 创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦
+新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端， &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="AI Dreamer" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><h1>AI Dreamer</h1>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/archives">Archive</a></li>
+	<li><a href="/aboutme">AboutMe</a></li>
+</ul>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Using Octopress</h2>
+	<div class="entry-content"><p>这篇文章参考了生命之氢</p>
+
+<h1>新建一个github.io</h1>
+
+<ol>
+<li>创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦</li>
+<li>新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github.io 从客户端放到本地，一定要从octopress。</li>
+</ol>
+
+
+<h1>合并远程仓库</h1>
+
+<p>在octopress中，是有两个仓库的，一个是source，用来存放后台代码的,一个是master，也就是主分支，是前端显示的。</p>
+
+<p>我们刚开始在github是建立了一个远程仓库的，第一次使用的时候是还没有将远程仓库和本地仓库合并的，这是两个不同的仓库，会提示unrelated histories，所以这时候需要先使用</p>
+
+<pre><code class="shell">cd _deploy
+git pull origin master --allow-unrelated-histories
+</code></pre>
+
+<h1>更换octopress 主题，</h1>
+
+<ol>
+<li>先把source 中atom.xml 和robots.txt中的nil 改成null</li>
+</ol>
+
+
+<h1>添加上公式</h1>
+
+<p>需要mathjx支持，不知道能不能有用。</p>
+
+<p>$$f(x) = \sin(x)\int_{0}^{1}\sum \cos(x)dx$$</p>
+
+<p>显然是没有用的。$\sin(x)$</p>
+
+<p>$$f(x) = \int^{10}_0\sin(x)dx$$</p>
+
+<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。另外，如果翻墙，公式加载也非常慢，直接访问网站会快很多。其实不更改markdown 也没关系的。但是注意改又花括号的地方时不能省略的。</p>
+
+<p>$$f(x) =x\cdot y$$</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='Javascript'><span class='line'><span class="c">&lt;!--</span> <span class="nx">mathjax</span> <span class="nx">config</span> <span class="nx">similar</span> <span class="nx">to</span> <span class="nx">math</span><span class="p">.</span><span class="nx">stackexchange</span> <span class="o">--&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/x-mathjax-config&quot;</span><span class="o">&gt;</span>
+</span><span class='line'><span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
+</span><span class='line'>  <span class="nx">jax</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;input/TeX&quot;</span><span class="p">,</span> <span class="s2">&quot;output/HTML-CSS&quot;</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;$&#39;</span><span class="p">,</span> <span class="s1">&#39;$&#39;</span><span class="p">]</span> <span class="p">],</span>
+</span><span class='line'>    <span class="nx">displayMath</span><span class="o">:</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span> <span class="s1">&#39;$$&#39;</span><span class="p">]],</span>
+</span><span class='line'>    <span class="nx">processEscapes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">skipTags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;script&#39;</span><span class="p">,</span> <span class="s1">&#39;noscript&#39;</span><span class="p">,</span> <span class="s1">&#39;style&#39;</span><span class="p">,</span> <span class="s1">&#39;textarea&#39;</span><span class="p">,</span> <span class="s1">&#39;pre&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">]</span>
+</span><span class='line'>  <span class="p">},</span>
+</span><span class='line'>  <span class="nx">messageStyle</span><span class="o">:</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="s2">&quot;HTML-CSS&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">preferredFont</span><span class="o">:</span> <span class="s2">&quot;TeX&quot;</span><span class="p">,</span> <span class="nx">availableFonts</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;STIX&quot;</span><span class="p">,</span><span class="s2">&quot;TeX&quot;</span><span class="p">]</span> <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">async</span>
+</span><span class='line'>  <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&quot;</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>另外，在_config.yml中markdown的解释器换了后，要注意这时候的语法有一点不一样，就是公式中$$ 必须单独成行，代码块前后面也必须要有空行。</p>
+
+<p>据说代码块也是有问题的，我要一起测试测试</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">torch</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">torch.nn</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">g</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>        <span class="nb">super</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">()</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>确实，好像没有高亮。</p>
+
+<p>原来是主题的原因，不过比较简洁，还是能够接受的，</p>
+
+<h2>插入图片</h2>
+
+<p>插入的图片放在/octopress/source/images/下，在引用的时候</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="err">!</span><span class="p">[](</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">image</span><span class="o">.</span><span class="n">img</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>提升速度</h1>
+
+<p>使用谷歌的源加载速度特别慢。</p>
+
+<p>具体的就是把source/<em>include/head.html和source/</em>include/custom/head.html中的fonts.google.com和ajax.google.com都替换成userso.com然后就Okay，速度哗哗的</p>
+
+<h1>添加七牛图床</h1>
+
+<p>这个跟octopress无关。</p>
+
+<p>下载qshell，将文件放在/usr/local/bin/下，然后在终端操作</p>
+
+<pre><code class="shell">qshell account ak sk#ak和sk分别是账户和密码这样就能生成账户文件
+</code></pre>
+
+<p>这时候可以在任何位置使用qshell命令</p>
+
+<pre><code class="shell">qshell qupload hello.txt#hello.txt是配置文件，这个配置文件是包含了上传信息的。参见qupload文档说明。
+</code></pre>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2017-06-28T22:41:59+08:00" pubdate data-updated="true">Jun 28th, 2017</time></div>
+	
+
+<div class="tags">
+
+	<a class='category' href='/blog/categories/octopress/'>octopress</a>
+
+</div>
+
+
+</div>
+</article>
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2017
+ YANG Chao 
+<br>
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</footer>
+	
+
+</body>
+</html>

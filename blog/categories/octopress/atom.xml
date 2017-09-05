@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | AI Dreamer]]></title>
+  <link href="http://ycangus2415.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://ycangus2415.github.io/"/>
+  <updated>2017-06-29T20:02:24+08:00</updated>
+  <id>http://ycangus2415.github.io/</id>
+  <author>
+    <name><![CDATA[YANG Chao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Using Octopress]]></title>
+    <link href="http://ycangus2415.github.io/blog/20170628/using-octopress.html/"/>
+    <updated>2017-06-28T22:41:59+08:00</updated>
+    <id>http://ycangus2415.github.io/blog/20170628/using-octopress</id>
+    <content type="html"><![CDATA[<p>这篇文章参考了生命之氢</p>
+
+<h1>新建一个github.io</h1>
+
+<ol>
+<li>创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦</li>
+<li>新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github.io 从客户端放到本地，一定要从octopress。</li>
+</ol>
+
+
+<h1>合并远程仓库</h1>
+
+<p>在octopress中，是有两个仓库的，一个是source，用来存放后台代码的,一个是master，也就是主分支，是前端显示的。</p>
+
+<p>我们刚开始在github是建立了一个远程仓库的，第一次使用的时候是还没有将远程仓库和本地仓库合并的，这是两个不同的仓库，会提示unrelated histories，所以这时候需要先使用</p>
+
+<pre><code class="shell">cd _deploy
+git pull origin master --allow-unrelated-histories
+</code></pre>
+
+<h1>更换octopress 主题，</h1>
+
+<ol>
+<li>先把source 中atom.xml 和robots.txt中的nil 改成null</li>
+</ol>
+
+
+<h1>添加上公式</h1>
+
+<p>需要mathjx支持，不知道能不能有用。</p>
+
+<p>$$f(x) = \sin(x)\int_{0}^{1}\sum \cos(x)dx$$</p>
+
+<p>显然是没有用的。$\sin(x)$</p>
+
+<p>$$f(x) = \int^{10}_0\sin(x)dx$$</p>
+
+<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。另外，如果翻墙，公式加载也非常慢，直接访问网站会快很多。其实不更改markdown 也没关系的。但是注意改又花括号的地方时不能省略的。</p>
+
+<p>$$f(x) =x\cdot y$$</p>
+
+<p>```Javascript</p>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<pre><code>
+
+
+另外，在_config.yml中markdown的解释器换了后，要注意这时候的语法有一点不一样，就是公式中$$ 必须单独成行，代码块前后面也必须要有空行。
+
+据说代码块也是有问题的，我要一起测试测试
+</code></pre>
+
+<p>import torch
+import torch.nn
+class g(nn.Module):
+    def <strong>init</strong>(self):
+        super(g, self).<strong>init</strong>()</p>
+
+<pre><code>
+
+
+确实，好像没有高亮。
+
+原来是主题的原因，不过比较简洁，还是能够接受的，
+
+## 插入图片
+
+插入的图片放在/octopress/source/images/下，在引用的时候
+</code></pre>
+
+<p><img src="/images/image.img" alt="" />
+```</p>
+
+<h1>提升速度</h1>
+
+<p>使用谷歌的源加载速度特别慢。</p>
+
+<p>具体的就是把source/<em>include/head.html和source/</em>include/custom/head.html中的fonts.google.com和ajax.google.com都替换成userso.com然后就Okay，速度哗哗的</p>
+
+<h1>添加七牛图床</h1>
+
+<p>这个跟octopress无关。</p>
+
+<p>下载qshell，将文件放在/usr/local/bin/下，然后在终端操作</p>
+
+<pre><code class="shell">qshell account ak sk#ak和sk分别是账户和密码这样就能生成账户文件
+</code></pre>
+
+<p>这时候可以在任何位置使用qshell命令</p>
+
+<pre><code class="shell">qshell qupload hello.txt#hello.txt是配置文件，这个配置文件是包含了上传信息的。参见qupload文档说明。
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
