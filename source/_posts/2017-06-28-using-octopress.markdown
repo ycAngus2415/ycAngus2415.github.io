@@ -124,3 +124,26 @@ qshell account ak sk#ak和sk分别是账户和密码这样就能生成账户文�
 qshell qupload hello.txt#hello.txt是配置文件，这个配置文件是包含了上传信息的。参见qupload文档说明。
 ~~~
 
+## Ocotopress 使用
+
+####生成代码和提交
+
+~~~shell
+bundle exec rake generate#生成
+bundle exec rake deploy#提交
+bundle exec rake gen_deploy#生成和提交
+#每次修改后都把原始文件都提交到 source 源码中
+git add . 
+git commit -m '备注内容'
+git push origin source 
+~~~
+
+#### 新博客和新页面
+
+~~~shell
+bundle exec rake new_post[new_post]#新博客
+bundle exec rake new_page[new_page]#新页面
+#在source/_includes/custom/navigation.html 中添加
+<li><a href="{{ root_url }}/your-title/new_post">new_post</a></li>#以添加页面到导航栏
+~~~
+
