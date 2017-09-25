@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: learning | AI Dreamer]]></title>
+  <link href="http://ycangus2415.github.io/blog/categories/learning/atom.xml" rel="self"/>
+  <link href="http://ycangus2415.github.io/"/>
+  <updated>2017-09-25T09:50:07+08:00</updated>
+  <id>http://ycangus2415.github.io/</id>
+  <author>
+    <name><![CDATA[YANG Chao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[python 简明教程学习]]></title>
+    <link href="http://ycangus2415.github.io/blog/20170924/python-jian-ming-jiao-cheng-xue-xi.html/"/>
+    <updated>2017-09-24T16:17:08+08:00</updated>
+    <id>http://ycangus2415.github.io/blog/20170924/python-jian-ming-jiao-cheng-xue-xi</id>
+    <content type="html"><![CDATA[<h1>python 简明教程</h1>
+
+<p>想着从头摸清python，发现学习不扎实，只能这样了。</p>
+
+<h2>print(&lsquo;hello world&rsquo;),print默认换行</h2>
+
+<h2>基础</h2>
+
+<ul>
+<li><p>整数</p></li>
+<li><p>浮点数</p></li>
+<li><p>字符串</p>
+
+<ul>
+<li><p>字符串格式化输出format()</p></li>
+<li><pre><code class="python">print('{0:.3f}'.format(1.2))#输出三位小数点
+print('{0:_^11}'.format('hello'))#两遍补齐，使得输出长度为11位
+print('{name}wrote{book}'.format(name='yangchao', book='a byte of python ')) #指定参数的方式格式化
+</code></pre></li>
+<li><p>print默认输出换行，使用end指定末尾空白</p></li>
+<li><pre><code class="python">print('a', end='')
+print('b', end='')
+</code></pre></li>
+<li><p>或者指定空格结尾</p></li>
+<li><pre><code class="python">print('a', end=' ')
+print('b', end=' ')
+print('c')
+</code></pre></li>
+</ul>
+</li>
+<li><p>转义序列（escape sequence)</p></li>
+<li><p>原始字符串，即使转义也不认为转义了，就是把字符串原样输出</p></li>
+<li><p>变量</p>
+
+<ul>
+<li>标识符，首字母字符或下划线，其他字符可以是数字</li>
+<li>数据类型</li>
+<li>对象，python将程序中的任何内容统称为对象</li>
+</ul>
+</li>
+<li><p>如果\在末尾，默认换行</p></li>
+<li><p>物理行和逻辑行</p></li>
+<li><p>缩进</p></li>
+</ul>
+
+
+<h2>运算符和表达式</h2>
+
+<p>表达式可以拆分为运算符（operators)和操作数（operands)</p>
+
+<ul>
+<li>运算符</li>
+<li>赋值和运算的快捷方式</li>
+<li>优先级</li>
+</ul>
+
+
+<h2>控制流</h2>
+
+<ul>
+<li><p>if</p>
+
+<ul>
+<li><p>通过input获得输入</p></li>
+<li><pre><code class="python">x = input('enter your name: ')#先打印一句话然后可以输入并将值赋予x
+</code></pre></li>
+</ul>
+</li>
+<li><p>while语句也有else</p></li>
+<li><p>for循环也有else，基本都是循环结束后输出</p></li>
+<li><p>range是一个生成器，一次生成一个</p></li>
+<li><p>break，如果中断了一个for货while循环，else块也不会执行</p></li>
+<li><p>Continue</p></li>
+</ul>
+
+
+<h2>函数</h2>
+
+<p>可重复使用的程序片段</p>
+
+<ul>
+<li>函数参数</li>
+<li>局部变量，作用域（scope）</li>
+<li>Global</li>
+<li>默认参数值</li>
+<li>关键字参数</li>
+<li>可变参数，* 元组，**字典</li>
+<li>return</li>
+<li>pass</li>
+<li>DocStrings，文档字符串</li>
+</ul>
+
+
+<h2>模块</h2>
+
+<p>可以使用C语言来撰写库，sys.argv的第一个参数时文件名，后面才是运行脚本的参数</p>
+
+<pre><code class="python">import sys#文件名为module_using_sys.py
+print('the command line arguments are :')
+for i in sys.argv:
+  print(i)
+</code></pre>
+
+<p>打印为：</p>
+
+<pre><code class="shell">$ python module_using_sys.py we are arguments
+The command line arguments are:
+module_using_sys.py
+we 
+are
+arguments
+</code></pre>
+
+<ul>
+<li><p>按字节码编译的.pyc文件</p>
+
+<ul>
+<li>导入模块代价高昂，创建按字节码编译的文件，是将python转化为中间形式的文件</li>
+</ul>
+</li>
+<li><p>from .. import 语句</p></li>
+<li><p>模块的__name__</p>
+
+<ul>
+<li><p>当模块第一次被倒入时，它所包含的代码将被执行，模块的名称帮我们以不同的方式运行</p></li>
+<li><pre><code class="python">if __name__ == '__main__':
+  print('this program is being run by itself')
+ else:
+  print('this program is imported from another module')
+</code></pre></li>
+<li><p>​</p></li>
+</ul>
+</li>
+<li><p>编写自己的模版，避免使用from mymodule import *,python的一大指导原则是明了胜过晦涩</p></li>
+<li><p>dir函数，返回对象所定义的名称列表</p></li>
+<li><p>包。变量位于函数内部，函数位于模版内部，模版在包中</p></li>
+</ul>
+
+
+<h2>数据结构</h2>
+
+<ul>
+<li>列表</li>
+<li>元组</li>
+<li>字典</li>
+<li>序列</li>
+<li>集合</li>
+<li>引用，直接赋值是同一个对象，切片操作就是复制一个新的对象</li>
+</ul>
+
+
+<pre><code class="python">x = ['xiaoming', 'er', 'dir']
+y = x
+print(y)#
+y.remove('er')
+print(y, x)#此时y和x都删除了一个元素，因为他们是同一个对象
+z = x[:]#这时候就不是同一个对象了，复制了一个新的对象
+</code></pre>
+
+<ul>
+<li>更多关于字符串的东西
+
+<ul>
+<li>字符串也是一个对象，有自己的方法</li>
+<li>find找到某些子字符串</li>
+<li>starwith查看是否由某些子字符串开头</li>
+</ul>
+</li>
+</ul>
+
+
+<p>以上都是一些基本知识，下面开始讲一些编写程序的东西</p>
+
+<h2>解决问题</h2>
+
+<h1>问题</h1>
+
+<ul>
+<li>首先是问题的提出，明白自己要达到的目的</li>
+<li>其次是分析，要达到目的需要做些什么</li>
+<li>然后列出所需要实现的一些模块</li>
+</ul>
+
+
+<p>本文题：一个备份文件的程序
+分析：</p>
+
+<pre><code>* 选择备份文件
+* 备份操作
+* 备份保存
+* 备份文件重读
+* 备份文件恢复
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
