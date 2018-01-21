@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://ycangus2415.github.io/blog/20180121/qin-shao-you.html/</loc>
+<lastmod>2018-01-21T10:05:15+08:00</lastmod>
+</url>
+<url>
 <loc>http://ycangus2415.github.io/blog/20170924/python-jian-ming-jiao-cheng-xue-xi.html/</loc>
 <lastmod>2017-09-24T16:17:08+08:00</lastmod>
 </url>
@@ -42,5 +46,8 @@
 </url>
 <url>
 <loc>http://ycangus2415.github.io/blog/categories/learning/</loc>
+</url>
+<url>
+<loc>http://ycangus2415.github.io/blog/categories/shi-ci/</loc>
 </url>
 </urlset>
