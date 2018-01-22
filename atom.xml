@@ -4,7 +4,7 @@
   <title><![CDATA[AI Dreamer]]></title>
   <link href="http://ycangus2415.github.io/atom.xml" rel="self"/>
   <link href="http://ycangus2415.github.io/"/>
-  <updated>2018-01-21T11:15:09+08:00</updated>
+  <updated>2018-01-22T12:56:33+08:00</updated>
   <id>http://ycangus2415.github.io/</id>
   <author>
     <name><![CDATA[YANG Chao]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[区块链理解]]></title>
+    <link href="http://ycangus2415.github.io/blog/20180122/qu-kuai-lian-li-jie.html/"/>
+    <updated>2018-01-22T12:35:23+08:00</updated>
+    <id>http://ycangus2415.github.io/blog/20180122/qu-kuai-lian-li-jie</id>
+    <content type="html"><![CDATA[<p>区块链其实就是分布式数据库，各个库直接像链表一样连起来。</p>
+
+<p>它最大的一个特点就是没有中心，任何人都可以向其中添加一块区块，而且没有人管你。</p>
+
+<p>所谓区块，就是一个数据体，里面有头文件和区块体，头文件存储的是数据的生成时间和这个区块体的hash值以及上一个区块的hash值。hash值得生成是唯一的，每个区块都只有一个hash值，而且改变数据，hash值也是会改变的。向区块链中添加一块区块，必须生成一个hash值。这个hash值得生成是十分困难的，需要大量的计算，和一个难度系数有关。</p>
+
+<p>hash = SHA256(区块头)</p>
+
+<p>而且这个hash值是不可修改的，当修改一个区块的hash，为了让后续的区块能连接到它，它的后续区块也就全部都要修改，这样的计算量实在太大。</p>
+
+<p>由于区块的节点间必须保持同步，所以新区块的添加不能太快，区块链的发明者中本聪指定每十分钟才能向其中添加一块区块，而且为了使得添加的时间恒定在十分钟，它设计了一种动态的难度系数，当有区块的hash值计算太快，就增加这个难度系数，当区块的计算太慢，就降低难度系数。</p>
+
+<p>另外，当有不只一块区块同时添加到一个区块后面，就看谁先有六块，先有六块的区块为这个一区块的后一个区块。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[秦少游]]></title>
