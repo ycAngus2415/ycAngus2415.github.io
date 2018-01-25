@@ -6,7 +6,7 @@ comments: true
 categories: 旅游
 ---
 
-<div style="align=center">
+<div align=center>
 
 <img src="http://osawqwqov.bkt.clouddn.com/%3CKey%20Prefix%3EIMG_2732.jpg" width=200 height=200/>
 
