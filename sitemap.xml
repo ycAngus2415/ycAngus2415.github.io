@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://ycangus2415.github.io/blog/20180208/he-ni-xiang-yu.html/</loc>
+<lastmod>2018-02-08T01:44:42+08:00</lastmod>
+</url>
+<url>
+<loc>http://ycangus2415.github.io/blog/20180204/cha-jing.html/</loc>
+<lastmod>2018-02-04T00:31:23+08:00</lastmod>
+</url>
+<url>
 <loc>http://ycangus2415.github.io/blog/20180125/%3C%3Cqiu-xie-:ru-he-gao-xiao-du-dong-%5B%3F%5D-ben-shu-%3E%3E-xu-pian.html/</loc>
 <lastmod>2018-01-25T15:49:51+08:00</lastmod>
 </url>
@@ -70,5 +78,11 @@
 </url>
 <url>
 <loc>http://ycangus2415.github.io/blog/categories/yue-du/</loc>
+</url>
+<url>
+<loc>http://ycangus2415.github.io/blog/categories/sheng-huo/</loc>
+</url>
+<url>
+<loc>http://ycangus2415.github.io/blog/categories/ai-ren/</loc>
 </url>
 </urlset>
