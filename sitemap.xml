@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://ycangus2415.github.io/blog/20180521/si-kao.html/</loc>
+<lastmod>2018-05-21T08:13:16+08:00</lastmod>
+</url>
+<url>
 <loc>http://ycangus2415.github.io/blog/20180208/he-ni-xiang-yu.html/</loc>
 <lastmod>2018-02-08T01:44:42+08:00</lastmod>
 </url>
@@ -84,5 +88,8 @@
 </url>
 <url>
 <loc>http://ycangus2415.github.io/blog/categories/ai-ren/</loc>
+</url>
+<url>
+<loc>http://ycangus2415.github.io/blog/categories/fan-si/</loc>
 </url>
 </urlset>

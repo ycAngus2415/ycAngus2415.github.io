@@ -7,7 +7,7 @@
 
 	<meta name="author" content="YANG Chao"> 
 	
-	<meta name="description" content="有人说，你是谁你就会遇到谁。 对的人总是以你想要的方式出现。 一、 雅静来自农村，通过高考进入大学，走进了大城市。在学校里，聚餐、破冰、春游、甚至班会都是会面临的消费环境。但是她的血汗钱来得并不容易，每次活动前，都会考虑自己手中所剩下的资金，并默默计算着这个月剩下的天数。如果是不容易推掉的活动， &hellip;"> <meta name="keywords" content="">
+	<meta name="description" content="在这个时间点，有很多事情可以做，但是我必须面临抉择了，专一方面为最重要的事，样样都会，但是不精，真的作用不大。另外，我还必须考虑家庭收入的问题了，挣钱养家的责任很快就要落到我的头上，如果没有一项赚钱的手艺，恐怕很难生活下去，这点公务员的工资真的不够我用。 首先，我接受过很多方面的学习 ppt制作 &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -35,6 +35,62 @@
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/20180521/si-kao.html/">
+		
+			思考</a>
+	</h2>
+	<div class="entry-content">
+		<p>在这个时间点，有很多事情可以做，但是我必须面临抉择了，专一方面为最重要的事，样样都会，但是不精，真的作用不大。另外，我还必须考虑家庭收入的问题了，挣钱养家的责任很快就要落到我的头上，如果没有一项赚钱的手艺，恐怕很难生活下去，这点公务员的工资真的不够我用。</p>
+
+<p>首先，我接受过很多方面的学习</p>
+
+<ul>
+<li>ppt制作，已经能够做出比较漂亮的成果，但是没有用这个来挣钱，不知道怎么入门找用户，更不知道商业上怎么面对客户的需求。但若是有人指导，应该能达到突飞猛进的效果，挣钱的效率也比较大。另外，这也是我喜欢的一项工作。</li>
+<li>参加比赛，这一项的可行性是最大的，也是我最优先考虑的方案。机器学习的问题现在很多机构在做，我在这方面的研究算是比较深入的，对于机器学习的算法又比较清楚的了解，对于深度学习的框架也较为熟练的使用。但是，我没有试验环境，而且拿奖的可能性不是很高，我在犹豫，若是深入做下去，会不会有提升，有没有拿奖的可能。</li>
+<li>写公众号文章。这是最简单的手段，而且收入还可以，每天若是写一篇文章，收入在一百左右，一个月能有三千元的收入，但是我的文笔恐怕还不够。可能是我还不够自信吧。</li>
+</ul>
+
+
+<p>这三个方面应该是我目前最想做，但是不一定能做的吧，应该也是我可能能够做的吧。每天在这个地方熬日子也不太好。</p>
+
+<p>感觉自己已经要二十五岁了，还是一事无成，心里空落落的，这个地方真的很磨人，要是以后毕业不去技术岗位，我真的不知道自己该怎么活下去了。如果那样的话，心里也只想着媳妇儿，怎么和媳妇儿开开心心更重要了，梦想什么的就无所谓了，还是争取事业吧。</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2018-05-21T08:13:16+08:00" pubdate data-updated="true">May 21st, 2018</time></div>
+	
+
+<div class="tags">
+
+	<a class='category' href='/blog/categories/fan-si/'>反思</a>
+
+</div>
+
+
+</div>
+</article>
 
 
     <article class="post">
@@ -843,197 +899,12 @@ $$</p>
 </article>
 
 
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/20170628/using-octopress.html/">
-		
-			Using Octopress</a>
-	</h2>
-	<div class="entry-content">
-		<p>这篇文章参考了生命之氢</p>
-
-<h1>新建一个github.io</h1>
-
-<ol>
-<li>创建了域名后千万不要在其他地方引用，不然会很麻烦，push 需要pull， pull 前需要branch, 反正就是各种麻烦事，把它当做最干净的时候用来写博客可以免去很多麻烦</li>
-<li>新建后只需要ssh ， 连密码都不用，当然最好是有一个git客户端，但是千万别把github.io 从客户端放到本地，一定要从octopress。</li>
-</ol>
-
-
-<h1>合并远程仓库</h1>
-
-<p>在octopress中，是有两个仓库的，一个是source，用来存放后台代码的,一个是master，也就是主分支，是前端显示的。</p>
-
-<p>我们刚开始在github是建立了一个远程仓库的，第一次使用的时候是还没有将远程仓库和本地仓库合并的，这是两个不同的仓库，会提示unrelated histories，所以这时候需要先使用</p>
-
-<pre><code class="shell">cd _deploy
-git pull origin master --allow-unrelated-histories
-</code></pre>
-
-<h1>更换octopress 主题，</h1>
-
-<ol>
-<li>先把source 中atom.xml 和robots.txt中的nil 改成null</li>
-</ol>
-
-
-<h1>添加上公式</h1>
-
-<p>需要mathjx支持，不知道能不能有用。</p>
-
-<p>$$f(x) = \sin(x)\int_{0}^{1}\sum \cos(x)dx$$</p>
-
-<p>显然是没有用的。$\sin(x)$</p>
-
-<p>$$f(x) = \int^{10}_0\sin(x)dx$$</p>
-
-<p>但是修改最后一句javascript这样的代码后就可以了，主要原因是mathjax的那个source更新了。加载非常慢，我是放在script.html中的，千万别放在head.html中，<strong>会后悔的</strong>，加载特别慢。另外，如果翻墙，公式加载也非常慢，直接访问网站会快很多。其实不更改markdown 也没关系的。但是注意改又花括号的地方时不能省略的。</p>
-
-<p>$$f(x) =x\cdot y$$</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='Javascript'><span class='line'><span class="c">&lt;!--</span> <span class="nx">mathjax</span> <span class="nx">config</span> <span class="nx">similar</span> <span class="nx">to</span> <span class="nx">math</span><span class="p">.</span><span class="nx">stackexchange</span> <span class="o">--&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/x-mathjax-config&quot;</span><span class="o">&gt;</span>
-</span><span class='line'><span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
-</span><span class='line'>  <span class="nx">jax</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;input/TeX&quot;</span><span class="p">,</span> <span class="s2">&quot;output/HTML-CSS&quot;</span><span class="p">],</span>
-</span><span class='line'>  <span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;$&#39;</span><span class="p">,</span> <span class="s1">&#39;$&#39;</span><span class="p">]</span> <span class="p">],</span>
-</span><span class='line'>    <span class="nx">displayMath</span><span class="o">:</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span> <span class="s1">&#39;$$&#39;</span><span class="p">]],</span>
-</span><span class='line'>    <span class="nx">processEscapes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">skipTags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;script&#39;</span><span class="p">,</span> <span class="s1">&#39;noscript&#39;</span><span class="p">,</span> <span class="s1">&#39;style&#39;</span><span class="p">,</span> <span class="s1">&#39;textarea&#39;</span><span class="p">,</span> <span class="s1">&#39;pre&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">]</span>
-</span><span class='line'>  <span class="p">},</span>
-</span><span class='line'>  <span class="nx">messageStyle</span><span class="o">:</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span>
-</span><span class='line'>  <span class="s2">&quot;HTML-CSS&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">preferredFont</span><span class="o">:</span> <span class="s2">&quot;TeX&quot;</span><span class="p">,</span> <span class="nx">availableFonts</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;STIX&quot;</span><span class="p">,</span><span class="s2">&quot;TeX&quot;</span><span class="p">]</span> <span class="p">}</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">async</span>
-</span><span class='line'>  <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&quot;</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>另外，在_config.yml中markdown的解释器换了后，要注意这时候的语法有一点不一样，就是公式中$$ 必须单独成行，代码块前后面也必须要有空行。</p>
-
-<p>据说代码块也是有问题的，我要一起测试测试</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">torch</span>
-</span><span class='line'><span class="kn">import</span> <span class="nn">torch.nn</span>
-</span><span class='line'><span class="k">class</span> <span class="nc">g</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-</span><span class='line'>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span class='line'>        <span class="nb">super</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">()</span>
-</span><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>确实，好像没有高亮。</p>
-
-<p>原来是主题的原因，不过比较简洁，还是能够接受的，</p>
-
-<h2>插入图片</h2>
-
-<p>插入的图片放在/octopress/source/images/下，在引用的时候</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="err">!</span><span class="p">[](</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">image</span><span class="o">.</span><span class="n">img</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h1>提升速度</h1>
-
-<p>使用谷歌的源加载速度特别慢。</p>
-
-<p>具体的就是把source/<em>include/head.html和source/</em>include/custom/head.html中的fonts.google.com和ajax.google.com都替换成userso.com然后就Okay，速度哗哗的</p>
-
-<h1>添加七牛图床</h1>
-
-<p>这个跟octopress无关。</p>
-
-<p>下载qshell，将文件放在/usr/local/bin/下，然后在终端操作</p>
-
-<pre><code class="shell">qshell account ak sk#ak和sk分别是账户和密码这样就能生成账户文件
-</code></pre>
-
-<p>这时候可以在任何位置使用qshell命令</p>
-
-<pre><code class="shell">qshell qupload hello.txt#hello.txt是配置文件，这个配置文件是包含了上传信息的。参见qupload文档说明。
-</code></pre>
-
-<h2>Ocotopress 使用</h2>
-
-<h4>生成代码和提交</h4>
-
-<pre><code class="shell">bundle exec rake generate#生成
-bundle exec rake deploy#提交
-bundle exec rake gen_deploy#生成和提交
-#每次修改后都把原始文件都提交到 source 源码中
-git add . 
-git commit -m '备注内容'
-git push origin source 
-</code></pre>
-
-<h4>新博客和新页面</h4>
-
-<pre><code class="shell">bundle exec rake new_post[new_post]#新博客
-bundle exec rake new_page[new_page]#新页面
-#在source/_includes/custom/navigation.html 中添加
-&lt;li&gt;&lt;a href="/your-title/new_post"&gt;new_post&lt;/a&gt;&lt;/li&gt;#以添加页面到导航栏
-</code></pre>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-
-<time datetime="2017-06-28T22:41:59+08:00" pubdate data-updated="true">Jun 28th, 2017</time></div>
-	
-
-<div class="tags">
-
-	<a class='category' href='/blog/categories/octopress/'>octopress</a>
-
-</div>
-
-
-</div>
-</article>
-
+<nav id="pagenavi">
+    
+    
+        <a href="2" class="next">Next</a>
+    
+</nav>
 
 </div>
 	<footer id="footer" class="inner">Copyright &copy; 2018
